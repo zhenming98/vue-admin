@@ -184,6 +184,18 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/push',
+    component: Layout,
+    children: [
+      {
+        path: 'push',
+        component: () => import('@/views/a-my/push/index'),
+        name: '推送',
+        meta: { title: '推送', icon: 'guide', noCache: true }
+      }
+    ]
+  },
+  {
     path: '/icon',
     component: Layout,
     children: [
